@@ -3,7 +3,7 @@ const {getSidebarList} = require('./utils/index')
 const sidebar = getSidebarList(path.join(__dirname, '../pageList'))
 
 module.exports = {
-  base: "/vuepress-init/",
+  base: "/vuepress-init/build/",
   dest: path.join(__dirname,'../../build'),
   title: 'vuepress-init',
   head: [
