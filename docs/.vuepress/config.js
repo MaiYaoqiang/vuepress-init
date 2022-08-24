@@ -5,13 +5,14 @@ const sidebar = getSidebarList(path.join(__dirname, '../pageList'))
 import {defaultTheme} from '@vuepress/theme-default'
 
 module.exports = {
+  base: "/vuepress-init/",
   title: 'vuepress-init',
   head: [
     ['link', {rel: 'icon', href: '/favicon.ico'}]
   ],
   theme: defaultTheme({
     navbar: [
-      {text: '帮助', link: 'https://www.vuepress.cn/'},
+      {text: '帮助', link: 'https://v2.vuepress.vuejs.org/zh/'},
     ],
     sidebar: sidebar,
   }),
