@@ -5,7 +5,7 @@ const sidebar = getSidebarList(path.join(__dirname, '../pageList'))
 import {defaultTheme} from '@vuepress/theme-default'
 
 module.exports = {
-  base: "/vuepress-init/",
+  base: process.env.NODE_ENV === 'production' ? "/vuepress-init/" : '/',
   title: 'vuepress-init',
   head: [
     ['link', {rel: 'icon', href: '/favicon.ico'}]
