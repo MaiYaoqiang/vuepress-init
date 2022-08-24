@@ -11,8 +11,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "vuepress": "^1.9.7",
-    "css-loader": "^3.1.0",
-    "mini-css-extract-plugin": "^2.6.1"
+    "vuepress": "1.9.7",
+    "vuepress-plugin-auto-sidebar": "2.3.2"
   }
 }
