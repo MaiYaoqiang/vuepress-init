@@ -1,5 +1,5 @@
-const fs = require('fs')
-const path = require('path')
+import fs from 'fs'
+import path from 'path'
 // 根据dir 遍历查找md文件并返回vuepress的sidebar，如果是文件夹  文件名将作为标题
 const getSidebarList = (dir, currentRootName = '') => {
   // 获取当前文件名
@@ -17,8 +17,8 @@ const getSidebarList = (dir, currentRootName = '') => {
     const name = path.basename(currentFile);
     if (statDirInfo.isDirectory()) {
       return {
-        title: name,
-        collapsable: true,
+        text: name,
+        collapsible: true,
         children: getSidebarList(currentFile, baseName)
       }
     } else {
@@ -47,6 +47,6 @@ const getSidebarList = (dir, currentRootName = '') => {
   })
 }
 
-module.exports = {
+export {
   getSidebarList
 }
